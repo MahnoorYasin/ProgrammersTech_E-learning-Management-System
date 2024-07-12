@@ -1,0 +1,1159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/*---------------home page starts-----------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.logo {
+    width: auto;
+    color: orangered;
+    font-size: 35px;
+    font-family: Ariel, sans-serif;
+    margin-top: 3%;
+    text-decoration: none;
+    /* Removes the underline */
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    /* Increased margin for more spacing */
+    margin-top: 5.5%;
+}
+
+nav ul a {
+    color: white;
+    /* Changed color to dark grey */
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+
+.header_text {
+    margin-top: 16%;
+    font-size: 20px;
+    color: white;
+}
+
+.header_text h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.header_text h1 span {
+    color: orangered;
+}
+
+.header_text p {
+    font-size: 17px;
+    margin-top: 13px;
+}
+
+.header_text .center-image {
+    display: block;
+    margin: 20px 0;
+    width: 470px;
+    height: auto;
+    position: absolute;
+    top: 55%;
+    right: 8%;
+    transform: translateY(-50%);
+}
+
+
+
+.footer {
+    background-color: dimgray;
+    /* border-top: 1px solid #ccc; /* or any desired color */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 18px;
+    /* equivalent to 2rem */
+    padding: 18px 11px;
+    /* equivalent to 2.5rem 2rem */
+    color: black;
+    margin-top: 10px;
+    /* equivalent to 1rem */
+    z-index: 1000;
+}
+
+.footer span {
+    color: orangered;
+    /* Use the specific color you want */
+}
+
+/*---------------home page ends-----------*/
+
+
+/*--------------about page starts-----------------*/
+#about_header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.logo {
+    width: auto;
+    color: orangered;
+    font-size: 35px;
+    font-family: Ariel, sans-serif;
+    margin-top: 3%;
+    text-decoration: none;
+    /* Removes the underline */
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    /* Increased margin for more spacing */
+    margin-top: 5.5%;
+}
+
+nav ul a {
+    color: white;
+    /* Changed color to dark grey */
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+.about_text {
+    margin-top: 10%;
+    font-size: 20px;
+    color: orangered;
+}
+
+.about_text h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.about_text h1 span {
+    color: orangered;
+}
+
+.about_text p {
+    font-size: 17px;
+    margin-top: 13px;
+    color: white;
+}
+
+.about_text h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: orangered;
+}
+
+.about_text h3 {
+    font-size: 14px;
+    margin-top: 13px;
+    color: white;
+}
+
+.about_text h3 span {
+    font-weight: bold;
+    /* Reset font weight to normal for the rest of the text */
+    display: block;
+    /* Ensures each line is displayed on a separate line */
+    margin-top: 8px;
+    /* Adjust the margin between lines */
+    color: orange;
+}
+
+/*--------testimonial section-----*/
+#testimonial {
+    padding: 50px 0;
+    text-align: center;
+    background-image: url(images/background6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#testimonial .heading {
+    font-weight: bold;
+    margin-top: 2.5%;
+    font-size: 2.5em;
+    margin-bottom: 2.5%;
+    color: orangered;
+    /* Orange color for heading */
+}
+
+#testimonial .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#testimonial .box {
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#testimonial .box p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+#testimonial .student {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#testimonial .student img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#testimonial .student h3 {
+    font-size: 1.2em;
+    color: orangered;
+    /* Orange color for student name */
+}
+
+#testimonial .stars {
+    margin-top: 5px;
+}
+
+#testimonial .stars i {
+    color: #f39c12;
+    /* Orange color for stars */
+}
+
+/*--------------- FAQ Section----------- */
+#faq {
+    padding: 60px 20px;
+    background-image: url(images/background5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* White text color */
+    text-align: center;
+}
+
+#faq .heading {
+    font-size: 2.5em;
+    color: orangered;
+    /* Orange color for the heading */
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: #444;
+    /* Slightly lighter grey for the FAQ items */
+    border: 1px solid #555;
+    /* Border color for the FAQ items */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.faq-item .faq-question {
+    font-size: 1.2em;
+    color: #db901f;
+    /* Orange color for the question */
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.faq-item .faq-answer {
+    font-size: 1em;
+    color: #ddd;
+    /* Light grey color for the answer */
+    display: none;
+    /* Hide the answer initially */
+    margin-top: 10px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+    /* Show the answer when the item is active */
+}
+
+/*------------about page ends------------*/
+
+
+
+/*-------------contact us page starts---------------*/
+
+#contact_header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/pic2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.logo {
+    width: auto;
+    color: orangered;
+    font-size: 35px;
+    font-family: Ariel, sans-serif;
+    margin-top: 3%;
+    text-decoration: none;
+    /* Removes the underline */
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    /* Increased margin for more spacing */
+    margin-top: 5.5%;
+}
+
+nav ul a {
+    color: white;
+    /* Changed color to dark grey */
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+#contact {
+    padding: 80px 0;
+    color: #ffffff;
+    /* Text color for the contact section */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-left {
+    flex-basis: 20%;
+}
+
+.contact-left h1.sub-title {
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+.contact-left p {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-left p i {
+    color: orangered;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.social-icon {
+    margin-top: 20px;
+}
+
+.social-icon a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #808080;
+    /* Default color for social icons */
+    transition: transform 0.3s ease;
+}
+
+.social-icon a:hover {
+    color: orangered;
+    transform: translateY(-5px);
+}
+
+.contact-form {
+    flex-basis: 60%;
+    padding-left: 60px;
+}
+
+.contact-form form {
+    width: 100%;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    /* Background color for form inputs */
+    color: #000000;
+    /* Text color for form inputs */
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+.contact-form form .btn.btn2 {
+    padding: 14px 60px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: orangered;
+    /* Button background color */
+    color: #ffffff;
+    /* Button text color */
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form form .btn.btn2:hover {
+    background-color: #ff6347;
+    /* Darker shade of button color on hover */
+}
+
+#msg {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/*--------------contact page ends------------*/
+
+/*-------------login page starts------------*/
+
+#login_header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/pic1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.logo {
+    width: auto;
+    color: orangered;
+    font-size: 35px;
+    font-family: Ariel, sans-serif;
+    margin-top: 3%;
+    text-decoration: none;
+    /* Removes the underline */
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    /* Increased margin for more spacing */
+    margin-top: 5.5%;
+}
+
+nav ul a {
+    color: white;
+    /* Changed color to dark grey */
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+#form-container {
+    margin-top: 5.75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    color: #ffffff;
+    /* Text color for the contact section */
+}
+
+#form-container .container {
+    background-color: #d3d3d3;
+    /* Grey background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+#form-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+#form-container p {
+    margin: 10px 0 5px;
+    color: #333333;
+}
+
+#form-container p span {
+    color: red;
+}
+
+#form-container input.box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#form-container input.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    /* Orange button color */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#form-container input.btn:hover {
+    background-color: darkorange;
+    /* Darker orange on hover */
+}
+
+/*---------login page ends-----------------*/
+
+/*---------sign up page starts-------------*/
+
+#form-container {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    color: #ffffff;
+    /* Text color for the contact section */
+}
+
+#form-container .container {
+    background-color: #d3d3d3;
+    /* Grey background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#form-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+#form-container p {
+    margin: 10px 0 5px;
+    color: #333333;
+}
+
+#form-container p span {
+    color: red;
+}
+
+#form-container input.box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#form-container input.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    /* Orange button color */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#form-container input.btn:hover {
+    background-color: darkorange;
+    /* Darker orange on hover */
+}
+
+/*-----------sign up page ends-----------*/
+
+/*-------------------- Courses page starts--------------------- */
+#courses_header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.logo {
+    width: auto;
+    color: orangered;
+    font-size: 35px;
+    font-family: Ariel, sans-serif;
+    margin-top: 3%;
+    text-decoration: none;
+    /* Removes the underline */
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    /* Increased margin for more spacing */
+    margin-top: 5.5%;
+}
+
+nav ul a {
+    color: white;
+    /* Changed color to dark grey */
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+#courses {
+    padding: 60px 20px;
+}
+
+#courses .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#courses .heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: orangered;
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.course h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.course p {
+    font-size: 16px;
+    color: #666;
+}
+
+.course video {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/*---------------Courses page ends---------------------*/
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+/* ---------Media query for smaller screens----------- */
+@media only screen and (max-width: 768px) {
+
+    /* Adjust font sizes */
+    body {
+        font-size: 14px;
+        /* Example smaller base font size */
+    }
+
+    /*logo and nav bar adjustments*/
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul a {
+        color: white;
+        /* Changed color to dark grey */
+        text-decoration: none;
+        font-size: 12px;
+        position: relative;
+    }
+
+    /* home page text adjustment*/
+    .header_text {
+        margin-top: 29%;
+        font-size: 18px;
+    }
+
+    .header_text h1 {
+        font-size: 28px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    .header_text p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .header_text .center-image {
+        width: 300px;
+        /* Example smaller image size */
+    }
+
+    /*footer part adjustment*/
+    .footer {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 10px;
+        /* equivalent to 1rem */
+        z-index: 1000;
+    }
+
+    /*about page adjustment*/
+    .about_text {
+        margin-top: 8%;
+        font-size: 20px;
+    }
+
+    .about_text h1 {
+        font-size: 30px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .about_text p {
+        font-size: 12px;
+        margin-top: 13px;
+    }
+
+    .about_text h2 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .about_text h3 {
+        font-size: 11px;
+        margin-top: 13px;
+    }
+
+    /*--------testimonial section-----*/
+
+    #testimonial .heading {
+        font-weight: bold;
+        margin-top: 2.5%;
+        font-size: 2em;
+    }
+
+    #testimonial .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #testimonial .box {
+        background-color: #dcdcdc;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        width: 200px;
+    }
+
+    #testimonial .box p {
+        font-size: 0.8em;
+        margin-bottom: 20px;
+    }
+
+    #testimonial .student {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    #testimonial .student img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    #testimonial .student h3 {
+        font-size: 1em;
+        color: orangered;
+        /* Orange color for student name */
+    }
+
+    #testimonial .stars {
+        margin-top: 5px;
+    }
+
+    #testimonial .stars i {
+        color: #f39c12;
+        /* Orange color for stars */
+    }
+
+    /*--------------- FAQ Section----------- */
+
+    #faq .heading {
+        font-size: 2em;
+        color: orangered;
+        /* Orange color for the heading */
+        margin-bottom: 40px;
+    }
+
+    .faq-container {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .faq-item .faq-question {
+        font-size: 1em;
+    }
+
+    .faq-item .faq-answer {
+        font-size: 0.8em;
+    }
+    /*Courses page adjustment*/
+
+    
+    #courses .container {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #courses .heading {
+        font-size: 30px;
+        margin-bottom: 40px;
+        color: orangered;
+    }
+    
+    
+    .course {
+        width: 80%;
+    }
+    
+    .course img {
+        max-width: 80%;
+        border-radius: 7px;
+    }
+    
+    .course h3 {
+        font-size: 20px;
+    }
+    
+    .course p {
+        font-size: 12px;
+        color: #666;
+    }
+    
+    .course video {
+        width: 80%;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+
+    /*login page adjustment*/
+    
+    #form-container .container {
+        width: 300px;
+    }
+    
+    /*sign up page adjustment*/
+
+    #form-container {
+        margin-top: 0%;
+    }
+
+    /*contact page*/
+
+    
+    .contact-left h1.sub-title {
+        font-size: 25px;
+    }
+
+    .contact-left p {
+        font-size: 10px;
+    }
+
+    .contact-left p i {
+        font-size: 10px;
+    }
+
+    .social-icon a {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    .contact-form {
+        padding-left: 20px;
+        padding-right: 20px; /* Add padding to the right to ensure spacing */
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .contact-form form .btn.btn2 {
+        padding: 10px 40px;
+        font-size: 10px;
+    }
+    
+    #msg {
+        font-size: 12px;
+    }
+
+    
+}
+
